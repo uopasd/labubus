@@ -3,6 +3,24 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/uopasd/labubus/refs/h
 
 local MainWindow = Library:Navigation({Size = UDim2.fromOffset(125, 40)})
 
+local theme = {
+	["Default"] = {
+		["Accent"] = Color3.fromRGB(212, 0, 227),
+		["Window Outline Background"] = Color3.fromRGB(39,39,47),
+		["Window Inline Background"] = Color3.fromRGB(23,23,30),
+		["Window Holder Background"] = Color3.fromRGB(32,32,38),
+		["Page Unselected"] = Color3.fromRGB(32,32,38),
+		["Page Selected"] = Color3.fromRGB(55,55,64),
+		["Section Background"] = Color3.fromRGB(27,27,34),
+		["Section Inner Border"] = Color3.fromRGB(50,50,58),
+		["Section Outer Border"] = Color3.fromRGB(19,19,27),
+		["Window Border"] = Color3.fromRGB(58,58,67),
+		["Text"] = Color3.fromRGB(245, 245, 245),
+		["Risky Text"] = Color3.fromRGB(245, 0, 4),
+		["Object Background"] = Color3.fromRGB(41,41,50)
+	}
+}
+
 local MainNavigationTab = MainWindow:CreateTab({Icon = "rbxassetid://130387207582017", MainWindow = true})
 local PlayerListNavigationTab = MainWindow:CreateTab({Icon = "rbxassetid://130785050448042", PlayerList = true})
 local ConfigsNavigationTab = MainWindow:CreateTab({Icon = "rbxassetid://102836483092386", Configs = true})
